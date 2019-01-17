@@ -45,3 +45,5 @@ As for the JSON payload, start with the example below:
   "startDate": "2018-01-01T00:00:01Z"
 }
 ```
+
+![alt text](https://raw.githubusercontent.com/3rabie/plan-generator/master/req%26resp.PNG)
