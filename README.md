@@ -1,5 +1,5 @@
 # Plan Generator
-Installment/Repayment Plan Generator with Java 8 and Spring Boot &amp; MVC
+Installment/Repayment Plan Generator with Java 8, Maven, Spring Boot, &amp; SpringMVC
 
 ## Running the project locally
 
