@@ -1,5 +1,6 @@
 package de.lendico.plangenerator.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +13,12 @@ import de.lendico.plangenerator.pojo.Installment;
 import de.lendico.plangenerator.pojo.LoanSpecs;
 import de.lendico.plangenerator.service.GeneratorPlanServiceImpl;
 
+/**
+ * A web controller for generating installment plans.
+ * 
+ * @author Abdulrahman Rabie
+ *
+ */
 @RestController
 public class PlanGeneratorController {
 
@@ -20,6 +27,7 @@ public class PlanGeneratorController {
 	
 	@PostMapping(path = "/generate-plan")
 	public ResponseEntity<List<Installment>> generatePlan(@RequestBody LoanSpecs loanSpecs){
-		return ResponseEntity.ok(genPlanService.planGenerator(loanSpecs));
+		List<Installment> installments = new ArrayList<>();
+		return ResponseEntity.ok(genPlanService.generatePlan(loanSpecs, installments));
 	}
 }

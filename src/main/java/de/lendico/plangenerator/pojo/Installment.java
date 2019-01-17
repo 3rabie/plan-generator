@@ -16,7 +16,7 @@ public class Installment {
 	private double interest;
 	private double principal;
 	private double remainingOutstandingPrincipal;
-	
+
 	/**
 	 * @return borrowerPaymentAmount
 	 */
@@ -67,7 +67,8 @@ public class Installment {
 	}
 
 	/**
-	 * @param Installment Interest
+	 * @param Installment
+	 *            Interest
 	 */
 	public void setInterest(double interest) {
 		this.interest = interest;
